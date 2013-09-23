@@ -1,14 +1,11 @@
-require 'rubygems'
-
+$:.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 require 'test/unit'
+require 'fakeweb'
+require 'fastimage_resize'
 
 PathHere = File.dirname(__FILE__)
 
-require File.join(".", PathHere, "..", "lib", 'fastimage_resize')
-
-require 'fakeweb'
-
-FixturePath = File.join(PathHere, "fixtures")
+FixturePath = File.join(File.dirname(__FILE__), "fixtures")
 
 GoodFixtures = {
   "test.gif"=>[:gif, [17, 32]],

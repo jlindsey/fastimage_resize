@@ -1,0 +1,6 @@
+Makefile
+fastimage_resize.bundle
+fastimage_resize.o
+mkmf.log
+.RUBYARCHDIR.time
+
