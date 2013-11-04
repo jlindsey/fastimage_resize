@@ -7,7 +7,6 @@ CLEAN.include 'ext/**/*.{o,log,bundle,so}'
 CLEAN.include 'ext/**/Makefile'
 CLEAN.include 'ext/**/.RUBYARCHDIR.time'
 CLEAN.include 'lib/**/*.{bundle,so}'
-CLEAN.include 'tmp'
 
 Rake::ExtensionTask.new('fastimage_resize_include') do |ext|
   ext.lib_dir = 'lib'
